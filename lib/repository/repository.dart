@@ -1,25 +1,24 @@
-import 'package:tedii/models/user.dart';
+import 'package:tedii/models/daily_report_model.dart';
 import 'package:tedii/repository/preference_repository.dart';
 
-import 'address_repository.dart';
+import 'open_food_fact_repository.dart';
 
 /// Main repository
 class Repository {
-  AddressRepository _addressRepository;
+  OpenFoodFactRepository _openFoodFactRepository;
   PreferenceRepository _preferenceRepository;
 
-  Repository(
-      {AddressRepository addressRepository,
+  Repository({OpenFoodFactRepository openFoodFactRepository,
       PreferenceRepository preferenceRepository}) {
-    this._addressRepository = addressRepository;
+    this._openFoodFactRepository = openFoodFactRepository;
     this._preferenceRepository = preferenceRepository;
   }
 
-  Future<void> setUsers(List<User> users) async {
-    _preferenceRepository.saveUsers(users);
+  Future<void> setDailyReports(List<DailyReport> dailyReports) async {
+    _preferenceRepository.saveDailyReports(dailyReports);
   }
 
-  Future<List<User>> getUsers() async {
-    return _preferenceRepository.loadUsers();
+  Future<List<DailyReport>> getDailyReports() async {
+    return _preferenceRepository.loadDailyReports();
   }
 }

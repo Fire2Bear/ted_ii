@@ -1,21 +1,34 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tedii/models/user.dart';
+import 'package:tedii/models/daily_report_model.dart';
 
 /// Class that serve of interface for every storage in preferences
 class PreferenceRepository {
-  Future<void> saveUsers(List<User> users) async {
+  Future<void> saveDailyReports(List<DailyReport> dailyReports) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    prefs.setStringList('users', users.map((user) => user.toJson()).toList());
+    List<String> dailyReportsString =
+        dailyReports.map((dailyReport) => dailyReport.toJson()).toList();
+    prefs.setStringList('dailyReports', dailyReportsString);
   }
 
-  Future<List<User>> loadUsers() async {
+  Future<List<dynamic>> getAll() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
+    print(" ### prefs Début");
+    print(prefs.getKeys());
+    print(prefs.getStringList('dailyReports'));
+//    print(prefs.setStringList('dailyReports', null));
+    print(" ### prefs fin");
+  }
+
+  Future<List<DailyReport>> loadDailyReports() async {
+    this.getAll();
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs
-            .getStringList('users')
-            ?.map((user) => User.fromJson(user))
-            ?.toList() ??
+        .getStringList('dailyReports')
+        ?.map((dailyReport) => DailyReport.fromJson(dailyReport))
+        ?.toList() ??
         [];
   }
+
 }

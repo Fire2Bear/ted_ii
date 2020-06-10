@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/kotlin/com/coloteam/ted_ii/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/TediiIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/common/my_drawer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/icons/tedii_icons_icons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/img/flutter-icons-6017199f/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/img/flutter-icons-649fc0cb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/img/pomme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/event_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/food_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/meal_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/objective_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/daily_report_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/address_repository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/preference_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/preference_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stores/user_store.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stores/user_store.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/utils_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Galaxy_Nexus_API_22" />
+  <component name="FavoritesManager">
+    <favorites_list name="ted_ii" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlutterView" splitter-proportion="0.7963303" />
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nicolas Jousset" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1boU6Lkn6JcT9oPOpLNBRMmM5Xb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\common" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\models" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="" />
+      <created>1589297763367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589297763367</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit project minimum of global naviguation and sketchup/front of daily report">
+      <created>1590858527425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590858527425</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit project minimum of global naviguation and sketchup/front of daily report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit project minimum of global naviguation and sketchup/front of daily report" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

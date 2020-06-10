@@ -1,5 +1,4 @@
 class Routes {
-  static const addOrModifyUser = "/addOrModifyUser";
-  static const searchAddress = "/searchAddress";
+  static const addOrModifyDailyReport = "/addOrModifyDailyReport";
   static const home = "/home";
 }
