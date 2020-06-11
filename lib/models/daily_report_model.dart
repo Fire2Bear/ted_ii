@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:intl/intl.dart';
+import 'package:tedii/utils/utils_service.dart';
 import 'package:uuid/uuid.dart';
 
 import 'event_model.dart';
@@ -50,5 +52,24 @@ class DailyReport {
         Meal.listFromJson(map['meals']),
         Objective.listFromJson(map['objectives']),
         Event.listFromJson(map['events']));
+  }
+
+  // retourne la date formatée lisible pour l'utilisateur
+  String getShortDate() {
+//    print("# getShortDate " + this.date.toString());
+    String prefix = "";
+    if (compareOnlyDateTo(DateTime.now(), this.date) == 0) {
+      prefix = "Aujourd'hui, ";
+    } else if (compareOnlyDateTo(
+            DateTime.now().add(Duration(days: 1)), this.date) ==
+        0) {
+      prefix = "Demain, ";
+    } else if (compareOnlyDateTo(
+            DateTime.now().subtract(Duration(days: 1)), this.date) ==
+        0) {
+      prefix = "Hier, ";
+    }
+
+    return prefix + new DateFormat("EEEE d MMMM", 'fr').format(this.date);
   }
 }

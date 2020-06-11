@@ -15,22 +15,25 @@ abstract class _DailyReportStore with Store {
   @observable
   ObservableList<DailyReport> dailyReports = ObservableList<DailyReport>();
 
+  @observable
+  DailyReport currentDailyReport;
+
   @action
   DailyReport getDailyReport(DateTime dateTime) {
-    print("getCurrentDailyReport");
-    print(dailyReports);
+    print("# getCurrentDailyReport");
+//    print(dailyReports);
     DailyReport dailyReport = this.dailyReports.singleWhere(
         (dailyReport) => compareOnlyDateTo(dailyReport.date, dateTime) == 0,
-        orElse: () => new DailyReport(date: new DateTime.now()));
-    print(dailyReports);
+        orElse: () => new DailyReport(date: dateTime));
+    print(dailyReport);
 
     return dailyReport;
   }
 
   @action
   void saveDailyReport(DailyReport dailyReport) {
-    print("saveDailyReport");
-    print(dailyReports);
+    print("# saveDailyReport");
+//    print(dailyReports);
     bool alreadyPresent = false;
     for (int i = 0; i < this.dailyReports.length; i++) {
       if (dailyReport.id == this.dailyReports[i].id) {
@@ -40,19 +43,19 @@ abstract class _DailyReportStore with Store {
       }
     }
     if (!alreadyPresent) {
-      dailyReports.add(dailyReport);
+      this.dailyReports.add(dailyReport);
     }
     this._repository.setDailyReports(this.dailyReports);
-    print(dailyReports);
+    print(this.dailyReports);
   }
 
   @action
   Future<void> loadDailyReports() async {
-    print("loadDailyReports");
+    print("# loadDailyReports");
     // attend le getDailyReports puis le cast en ObservableList
-    dailyReports = ObservableList<DailyReport>.of(
+    this.dailyReports = ObservableList<DailyReport>.of(
         (await this._repository.getDailyReports()));
-    print(dailyReports);
+    print(this.dailyReports);
   }
 
   @action

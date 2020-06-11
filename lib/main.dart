@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 import 'package:tedii/home.dart';
 import 'package:tedii/repository/open_food_fact_repository.dart';
@@ -16,6 +17,9 @@ void main() {
       preferenceRepository: preferenceRepository);
 
   DailyReportStore dailyReportStore = DailyReportStore(repository);
+
+  initializeDateFormatting(); // Initialisation des dates locales "fr"
+
   return runApp(Provider<DailyReportStore>(
     create: (_) => dailyReportStore,
     child: MyApp(),
@@ -24,10 +28,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+//      locale: Locale("fr"),
       debugShowCheckedModeBanner: false,
       title: 'My dailyReports',
       theme: ThemeData(

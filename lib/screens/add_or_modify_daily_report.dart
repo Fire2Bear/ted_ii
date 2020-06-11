@@ -33,11 +33,6 @@ class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
   @override
   Widget build(BuildContext context) {
     dailyReportStore = Provider.of<DailyReportStore>(context);
-/*
-    if (this.widget.dailyReport == null) {
-      this.widget.dailyReport.date = DateTime.now();
-    }
-*/
 
     return Scaffold(
       appBar: AppBar(

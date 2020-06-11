@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tedii/stores/daily_report_store.dart';
-import 'package:tedii/tabs/daily_report_overview.dart';
+import 'package:tedii/tabs/activity_overview.dart';
 
 import 'components/common/logo.dart';
 import 'components/common/my_drawer.dart';
@@ -32,16 +32,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     dailyReportStore = Provider.of<DailyReportStore>(context);
-    Future<void> dailyReports = dailyReportStore.loadDailyReports();
 
-    return FutureBuilder<void>(
-        future: dailyReports,
-        builder: (BuildContext context, AsyncSnapshot snapshot) {
-          Widget child;
-          if (snapshot.connectionState == ConnectionState.done) {
-            child = Scaffold(
-              appBar: AppBar(
-                title: Logo(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Logo(),
               ),
               body: IndexedStack(
                 index: _index,
@@ -49,7 +43,7 @@ class _HomeState extends State<Home> {
                   Container(
                     color: Colors.orange,
                   ),
-                  DailyReportOverview(),
+                  ActivityOverview(),
                   Container(
                     color: Colors.blue,
                   ),
@@ -59,7 +53,7 @@ class _HomeState extends State<Home> {
                 items: const <BottomNavigationBarItem>[
                   BottomNavigationBarItem(
                     icon: Icon(Icons.show_chart),
-                    title: Text('STATISTIQUE'),
+                    title: Text('STATISTIQUES'),
                   ),
                   BottomNavigationBarItem(
                     icon: Icon(Icons.calendar_view_day),
@@ -67,7 +61,7 @@ class _HomeState extends State<Home> {
                   ),
                   BottomNavigationBarItem(
                       icon: Icon(Icons.receipt),
-                      title: Text('RECETTE'),
+                      title: Text('RECETTES'),
                       backgroundColor: Colors.green)
                 ],
                 onTap: (index) {
@@ -79,23 +73,5 @@ class _HomeState extends State<Home> {
               ),
               drawer: MyDrawer(),
             );
-          } else {
-            print(snapshot);
-            child = Row(
-              children: <Widget>[
-                SizedBox(
-                  child: CircularProgressIndicator(),
-                  width: 30,
-                  height: 30,
-                ),
-                Text(
-                  'Awaiting result...',
-                  style: TextStyle(fontSize: 20),
-                ),
-              ],
-            );
-          }
-          return child;
-        });
   }
 }

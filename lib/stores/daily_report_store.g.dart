@@ -13,25 +13,59 @@ mixin _$DailyReportStore on _DailyReportStore, Store {
 
   @override
   ObservableList<DailyReport> get dailyReports {
-    _$dailyReportsAtom.context.enforceReadPolicy(_$dailyReportsAtom);
-    _$dailyReportsAtom.reportObserved();
+    _$dailyReportsAtom.reportRead();
     return super.dailyReports;
   }
 
   @override
   set dailyReports(ObservableList<DailyReport> value) {
-    _$dailyReportsAtom.context.conditionallyRunInAction(() {
+    _$dailyReportsAtom.reportWrite(value, super.dailyReports, () {
       super.dailyReports = value;
-      _$dailyReportsAtom.reportChanged();
-    }, _$dailyReportsAtom, name: '${_$dailyReportsAtom.name}_set');
+    });
+  }
+
+  final _$currentDailyReportAtom =
+      Atom(name: '_DailyReportStore.currentDailyReport');
+
+  @override
+  DailyReport get currentDailyReport {
+    _$currentDailyReportAtom.reportRead();
+    return super.currentDailyReport;
+  }
+
+  @override
+  set currentDailyReport(DailyReport value) {
+    _$currentDailyReportAtom.reportWrite(value, super.currentDailyReport, () {
+      super.currentDailyReport = value;
+    });
+  }
+
+  final _$loadDailyReportsAsyncAction =
+      AsyncAction('_DailyReportStore.loadDailyReports');
+
+  @override
+  Future<void> loadDailyReports() {
+    return _$loadDailyReportsAsyncAction.run(() => super.loadDailyReports());
   }
 
   final _$_DailyReportStoreActionController =
       ActionController(name: '_DailyReportStore');
 
   @override
+  DailyReport getDailyReport(DateTime dateTime) {
+    final _$actionInfo = _$_DailyReportStoreActionController.startAction(
+        name: '_DailyReportStore.getDailyReport');
+    try {
+      return super.getDailyReport(dateTime);
+    } finally {
+      _$_DailyReportStoreActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void saveDailyReport(DailyReport dailyReport) {
-    final _$actionInfo = _$_DailyReportStoreActionController.startAction();
+    final _$actionInfo = _$_DailyReportStoreActionController.startAction(
+        name: '_DailyReportStore.saveDailyReport');
     try {
       return super.saveDailyReport(dailyReport);
     } finally {
@@ -41,7 +75,8 @@ mixin _$DailyReportStore on _DailyReportStore, Store {
 
   @override
   void delete(DailyReport dailyReport) {
-    final _$actionInfo = _$_DailyReportStoreActionController.startAction();
+    final _$actionInfo = _$_DailyReportStoreActionController.startAction(
+        name: '_DailyReportStore.delete');
     try {
       return super.delete(dailyReport);
     } finally {
@@ -50,18 +85,10 @@ mixin _$DailyReportStore on _DailyReportStore, Store {
   }
 
   @override
-  Future<void> loadDailyReports() {
-    final _$actionInfo = _$_DailyReportStoreActionController.startAction();
-    try {
-      return super.loadDailyReports();
-    } finally {
-      _$_DailyReportStoreActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
   String toString() {
-    final string = 'usedailyReportsrs: ${dailyReports.toString()}';
-    return '{$string}';
+    return '''
+dailyReports: ${dailyReports},
+currentDailyReport: ${currentDailyReport}
+    ''';
   }
 }

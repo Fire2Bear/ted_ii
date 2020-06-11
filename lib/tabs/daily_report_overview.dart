@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:fluttericon/rpg_awesome_icons.dart';
 import 'package:provider/provider.dart';
-import 'package:tedii/models/daily_report_model.dart';
 import 'package:tedii/stores/daily_report_store.dart';
 
 import '../routes.dart';
@@ -17,156 +16,139 @@ class DailyReportOverview extends StatefulWidget {
 class _DailyReportOverviewState extends State<DailyReportOverview> {
   DailyReportStore dailyReportStore;
 
-  DailyReport currentDailyReport;
-
   @override
   void initState() {
     super.initState();
+  }
+
+  void changeDay(int change) {
+    dailyReportStore.saveDailyReport(dailyReportStore.currentDailyReport);
+    dailyReportStore.currentDailyReport = dailyReportStore.getDailyReport(
+        dailyReportStore.currentDailyReport.date.add(Duration(days: change)));
+//    dailyReportStore.saveDailyReport(dailyReportStore.currentDailyReport);
   }
 
   @override
   Widget build(BuildContext context) {
     dailyReportStore = Provider.of<DailyReportStore>(context);
 
-    if (this.currentDailyReport == null) {
-      this.currentDailyReport = dailyReportStore.getDailyReport(DateTime.now());
-      dailyReportStore.saveDailyReport(currentDailyReport);
+    // Ouverture de l'application on set le currentDailyreport au jour actuel
+    if (dailyReportStore.currentDailyReport == null) {
+      dailyReportStore.currentDailyReport =
+          dailyReportStore.getDailyReport(DateTime.now());
+//      dailyReportStore.saveDailyReport(dailyReportStore.currentDailyReport);
     }
 
-    print(this.currentDailyReport);
+//    print(dailyReportStore.currentDailyReport);
 
     return Observer(builder: (context) {
-      return Center(
-        child: Column(
+      return Column(
+          // Daily report
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Container(
-              margin: const EdgeInsets.only(top: 30.0),
-              child: Center(
-                child: Column(
-                  // Daily report
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Row(
-                      /// Naviguation DailyReport
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.arrow_back_ios),
-                          tooltip: "Jour précédent",
-                          onPressed: () {
-                            // TODO Call changeDay(-1)
-                          },
-                        ), // Jour précédent
-                        GestureDetector(
-                          onTap: () async {
-                            /*
+            Row(
+              /// Naviguation DailyReport
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.arrow_back_ios),
+                  tooltip: "Jour précédent",
+                  onPressed: () {
+                    this.changeDay(-1);
+                  },
+                ), // Jour précédent
+                GestureDetector(
+                  onTap: () async {
+                    /*
                             DailyReportOverview dailyReport = await Navigator.of(context).pushNamed<dynamic>(
                                 Routes.addOrModifyDailyReport,
                                 arguments: DailyReport(date: DateTime.now()));
                                 */
-                          },
-                          child: Container(
-                              child: Row(
+                  },
+                  child: Container(
+                      child: Row(
 
-                                /// Jour courant
-                                  children: <Widget>[
-                                    Icon(Icons.calendar_today),
-                                    Text("Aujourd'hui, 23 Avril"),
-                                  ])),
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.arrow_forward_ios),
-                          tooltip: "Jour suivant",
-                          onPressed: () {
-                            // TODO Call changeDay(1)
-                          },
-                        ), // Jour suivant
-                      ],
-                    ),
-                    GestureDetector(
-                      onTap: () async {
-                        // Goto AddOrModifyDailyReport
-                        await Navigator.of(context).pushNamed<dynamic>(
-                            Routes.addOrModifyDailyReport,
-                            arguments: this.currentDailyReport);
-                      },
-                      child: Container(
-                        color: Colors.white,
-                        // Permet que toute la largeur soit cliquable
-                        height: 50,
-                        child: Row(
+                        /// Jour courant
                           children: <Widget>[
-                            SizedBox(width: 10),
-                            Icon(Icons.restaurant),
-                            SizedBox(width: 10),
-                            Text("Mes repas")
-                          ],
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-
-                      /// My objectives
-                      onTap: () {
-                        // Todo goto MyEvents
-                      },
-                      child: Container(
-                        color: Colors.white,
-                        // Permet que toute la largeur soit cliquable
-                        height: 50,
-                        child: Row(
-                          children: <Widget>[
-                            SizedBox(width: 10),
-                            Icon(RpgAwesome.archery_target),
-                            SizedBox(width: 10),
-                            Text("Mes objectifs")
-                          ],
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-
-                      /// My events
-                      onTap: () {
-                        // Todo goto MyEvents
-                      },
-                      child: Container(
-                        color: Colors.white,
-                        // Permet que toute la largeur soit cliquable
-                        height: 50,
-                        child: Row(
-                          children: <Widget>[
-                            SizedBox(width: 10),
-                            Icon(Icons.event),
-                            SizedBox(width: 10),
-                            Text("Mes événements")
-                          ],
-                        ),
-                      ),
-                    ),
+                            Icon(Icons.calendar_today),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(dailyReportStore.currentDailyReport
+                                .getShortDate())
+                          ])),
+                ),
+                IconButton(
+                  icon: Icon(Icons.arrow_forward_ios),
+                  tooltip: "Jour suivant",
+                  onPressed: () {
+                    this.changeDay(1);
+                  },
+                ), // Jour suivant
+              ],
+            ),
+            GestureDetector(
+              onTap: () async {
+                // Goto AddOrModifyDailyReport
+                await Navigator.of(context).pushNamed<dynamic>(
+                    Routes.addOrModifyDailyReport,
+                    arguments: dailyReportStore.currentDailyReport);
+              },
+              child: Container(
+                color: Colors.white,
+                // Permet que toute la largeur soit cliquable
+                height: 50,
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 10),
+                    Icon(Icons.restaurant),
+                    SizedBox(width: 10),
+                    Text("Mes repas")
                   ],
                 ),
               ),
-              width: MediaQuery.of(context).size.width / 1.2,
-              // Largeur de la naviguation
-              height: MediaQuery.of(context).size.height / 3,
-              // Hauteur de la naviguation
-              decoration: BoxDecoration(
+            ),
+            GestureDetector(
+
+              /// My objectives
+              onTap: () {
+                // Todo goto MyObjectives
+              },
+              child: Container(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: [
-                  new BoxShadow(
-                    color: Colors.grey,
-                    offset: new Offset(-1.5, 1.5),
-                    blurRadius: 5.0,
-                  )
-                ],
+                // Permet que toute la largeur soit cliquable
+                height: 50,
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 10),
+                    Icon(RpgAwesome.archery_target),
+                    SizedBox(width: 10),
+                    Text("Mes objectifs")
+                  ],
+                ),
               ),
-              alignment: Alignment.topCenter,
-            )
-          ],
-        ),
-      );
+            ),
+            GestureDetector(
+
+              /// My events
+              onTap: () {
+                // Todo goto MyEvents
+              },
+              child: Container(
+                color: Colors.white,
+                // Permet que toute la largeur soit cliquable
+                height: 50,
+                child: Row(
+                  children: <Widget>[
+                    SizedBox(width: 10),
+                    Icon(Icons.event),
+                    SizedBox(width: 10),
+                    Text("Mes événements")
+                  ],
+                ),
+              ),
+            ),
+          ]);
     });
   }
 }

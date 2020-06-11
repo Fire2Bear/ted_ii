@@ -7,7 +7,7 @@ class GoBackButton extends StatelessWidget {
     return Container(
         child: FlatButton(
             onPressed: () {
-              // TODO Go back Navigator.pop()
+              Navigator.pop(context);
             },
             child: Row(
               children: <Widget>[Icon(Icons.arrow_back), Text("Retour")],

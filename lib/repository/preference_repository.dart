@@ -16,12 +16,12 @@ class PreferenceRepository {
     print(" ### prefs Début");
     print(prefs.getKeys());
     print(prefs.getStringList('dailyReports'));
-//    print(prefs.setStringList('dailyReports', null));
+//    print(prefs.setStringList('dailyReports', null)); // Permet de réinitialiser les dailyReports stockés
     print(" ### prefs fin");
   }
 
   Future<List<DailyReport>> loadDailyReports() async {
-    this.getAll();
+//    this.getAll(); // permet de vérifier le contenu des shared_prefs
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs
