@@ -24,7 +24,25 @@ abstract class _DailyReportStore with Store {
 //    print(dailyReports);
     DailyReport dailyReport = this.dailyReports.singleWhere(
         (dailyReport) => compareOnlyDateTo(dailyReport.date, dateTime) == 0,
-        orElse: () => new DailyReport(date: dateTime));
+        orElse: () {
+      // On retourne un nouveau dailyReport et on l'ajoute à la liste des existants
+      DailyReport newDailyReport = new DailyReport(date: dateTime);
+      this.dailyReports.add(newDailyReport);
+      this._repository.setDailyReports(dailyReports);
+      return newDailyReport;
+    });
+    print(dailyReport);
+    this._repository.setDailyReports(this.dailyReports);
+
+    return dailyReport;
+  }
+
+  @action
+  DailyReport getDailyReportById(String dailyReportId) {
+    print("# getCurrentDailyReport");
+//    print(dailyReports);
+    DailyReport dailyReport = this.dailyReports.singleWhere(
+            (dailyReport) => (dailyReport.id == dailyReportId));
     print(dailyReport);
 
     return dailyReport;
@@ -47,6 +65,9 @@ abstract class _DailyReportStore with Store {
     }
     this._repository.setDailyReports(this.dailyReports);
     print(this.dailyReports);
+    print("length : " + this.dailyReports.length.toString());
+    print("# saveDailyReport FIN");
+
   }
 
   @action

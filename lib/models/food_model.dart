@@ -5,40 +5,40 @@ import 'package:uuid/uuid.dart';
 
 class Food {
   String id;
-  TimeOfDay time;
+  String productName;
 
-  Food({time: TimeOfDay}) {
+  Food({time: TimeOfDay, productName: String}) {
     this.id = Uuid().v1();
-    this.time = time;
+    this.productName = productName;
   }
 
-  Food.eventWithId(this.id, this.time);
+  Food.foodWithId(this.id, this.productName);
 
   @override
   String toString() {
-    return this.time.toString();
+    return this.productName;
   }
 
   String toJson() {
     return jsonEncode({
       'id': this.id.toString(),
-      'time': this.time.toString(),
+      'productName': this.productName.toString(),
     });
   }
 
   factory Food.fromJson(String json) {
     Map<String, dynamic> map = jsonDecode(json);
-    return Food.eventWithId(map['id'] as String, map['time'] as TimeOfDay);
+    return Food.foodWithId(map['id'] as String, map['productName'] as String);
   }
 
-  // A function that converts a json list into a List<Event>.
+  // A function that converts a json list into a List<Food>.
   static List<Food> listFromJson(String jsonList) {
     final parsed = jsonDecode(jsonList).cast<Map<String, dynamic>>();
     return parsed.map<Food>((json) => Food.fromJson(json)).toList();
   }
 
-  // A function that converts a List<Event> into a json list.
-  static String listToJson(List<Food> listEvent) {
-    return jsonEncode(listEvent.map<String>((event) => event.toJson()));
+  // A function that converts a List<Food> into a json list.
+  static String listToJson(List<Food> listFood) {
+    return jsonEncode(listFood.map<String>((food) => food.toJson()).toList());
   }
 }

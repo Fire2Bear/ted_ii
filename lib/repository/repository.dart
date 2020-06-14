@@ -1,16 +1,11 @@
 import 'package:tedii/models/daily_report_model.dart';
 import 'package:tedii/repository/preference_repository.dart';
 
-import 'open_food_fact_repository.dart';
-
 /// Main repository
 class Repository {
-  OpenFoodFactRepository _openFoodFactRepository;
   PreferenceRepository _preferenceRepository;
 
-  Repository({OpenFoodFactRepository openFoodFactRepository,
-      PreferenceRepository preferenceRepository}) {
-    this._openFoodFactRepository = openFoodFactRepository;
+  Repository({PreferenceRepository preferenceRepository}) {
     this._preferenceRepository = preferenceRepository;
   }
 

@@ -15,7 +15,7 @@ class Meal {
     this.id = Uuid().v1();
     this.time = time;
     this.mealType = mealType;
-    this.foods = List();
+    this.foods = [];
   }
 
   Meal.mealWithId(this.id, this.time, this.mealType, this.foods);
@@ -28,26 +28,28 @@ class Meal {
   String toJson() {
     return jsonEncode({
       'id': this.id.toString(),
-      'time': this.time.toString(),
+      'time': this.time.hour.toString() + ":" + this.time.minute.toString(),
       'mealType': this.mealType.toString(),
       'foods': Food.listToJson(this.foods),
     });
   }
 
-  factory Meal.fromJson(String json) {
-    Map<String, dynamic> map = jsonDecode(json);
+  factory Meal.fromJson(String res) {
+    Map<String, dynamic> json = jsonDecode(res);
     return Meal.mealWithId(
-      map['id'] as String,
-      map['time'] as TimeOfDay,
-      map['mealType'] as int,
-      Food.listFromJson(map['foods']),
+      json['id'] as String,
+      TimeOfDay(
+          hour: int.parse(json['time'].split(":")[0]),
+          minute: int.parse(json['time'].split(":")[1])),
+      int.parse(json['mealType']),
+      Food.listFromJson(json['foods'] as String),
     );
   }
 
   // A function that converts a json list into a List<Meal>.
   static List<Meal> listFromJson(String jsonList) {
-    final parsed = jsonDecode(jsonList).cast<Map<String, dynamic>>();
-    return parsed.map<Meal>((json) => Meal.fromJson(json)).toList();
+    List<dynamic> parsed = jsonDecode(jsonList);
+    return parsed.map((json) => Meal.fromJson(json)).toList();
   }
 
   // A function that converts a List<Meal> into a json list.

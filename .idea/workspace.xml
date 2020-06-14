@@ -4,20 +4,21 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="Navigation between dates working">
-      <change afterPath="$PROJECT_DIR$/lib/tabs/activity_overview.dart" afterDir="false" />
+    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="Modification heure repas fonctionnelle + début liste aliments">
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/models/daily_report_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/daily_report_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/food_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/food_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/meal_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/meal_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/repository/preference_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/preference_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/repository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/daily_report_store.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Galaxy_Nexus_API_22" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="42fdbfa0" />
   <component name="FavoritesManager">
     <favorites_list name="ted_ii" />
   </component>
@@ -36,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="FlutterView" splitter-proportion="0.7963303" />
+  <component name="FlutterView" splitter-proportion="0.42706132" />
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -60,27 +61,27 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/tabs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/screens" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\tabs" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\common" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\models" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\fonts" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\fonts" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\screens" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\stores" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\tabs" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591789429122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Navigation between dates working">
+      <created>1591878751129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591878751129</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +154,8 @@
     <MESSAGE value="Initial commit project minimum of global naviguation and sketchup/front of daily report" />
     <MESSAGE value="Working loading and saving daily_reports" />
     <MESSAGE value="Navigation between dates working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation between dates working" />
+    <MESSAGE value="Modification heure repas fonctionnelle + début liste aliments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification heure repas fonctionnelle + début liste aliments" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

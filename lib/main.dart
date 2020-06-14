@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 import 'package:tedii/home.dart';
-import 'package:tedii/repository/open_food_fact_repository.dart';
+import 'package:tedii/models/daily_report_model.dart';
 import 'package:tedii/repository/preference_repository.dart';
 import 'package:tedii/repository/repository.dart';
-import 'package:tedii/routes.dart';
 import 'package:tedii/screens/add_or_modify_daily_report.dart';
 import 'package:tedii/stores/daily_report_store.dart';
 
 void main() {
   PreferenceRepository preferenceRepository = PreferenceRepository();
-  OpenFoodFactRepository openFoodFactRepository = OpenFoodFactRepository();
-  Repository repository = Repository(
-      openFoodFactRepository: openFoodFactRepository,
-      preferenceRepository: preferenceRepository);
+  Repository repository =
+      Repository(preferenceRepository: preferenceRepository);
 
   DailyReportStore dailyReportStore = DailyReportStore(repository);
 
@@ -38,10 +35,26 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.lightGreen,
       ),
       home: Home(),
+      onGenerateRoute: (settings) {
+        // If you push the PassArguments route
+        if (settings.name == AddOrModifyDailyReport.routeName) {
+          // Cast the arguments to the correct type: ScreenArguments.
+          final DailyReport dailyReport = settings.arguments;
+
+          // Then, extract the required data from the arguments and
+          // pass the data to the correct screen.
+          return MaterialPageRoute(
+            builder: (context) {
+              return AddOrModifyDailyReport(dailyReportId: dailyReport.id);
+            },
+          );
+        }
+        assert(false, 'Need to implement ${settings.name}');
+        return null;
+      },
       routes: {
-        Routes.addOrModifyDailyReport: (context) => AddOrModifyDailyReport(),
+//        Routes.addOrModifyDailyReport: (context) => AddOrModifyDailyReport(),
       },
     );
   }
 }
-

@@ -16,7 +16,8 @@ class PreferenceRepository {
     print(" ### prefs Début");
     print(prefs.getKeys());
     print(prefs.getStringList('dailyReports'));
-//    print(prefs.setStringList('dailyReports', null)); // Permet de réinitialiser les dailyReports stockés
+    print(prefs.setStringList('dailyReports',
+        null)); // Permet de réinitialiser les dailyReports stockés
     print(" ### prefs fin");
   }
 

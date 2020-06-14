@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:tedii/utils/utils_service.dart';
 import 'package:uuid/uuid.dart';
@@ -19,7 +20,11 @@ class DailyReport {
   DailyReport({date: DateTime}) {
     this.id = Uuid().v1();
     this.date = date;
-    this.meals = List();
+    this.meals = List(4);
+    meals[0] = (Meal(time: TimeOfDay.now(), mealType: 0));
+    meals[1] = (Meal(time: TimeOfDay.now(), mealType: 1));
+    meals[2] = (Meal(time: TimeOfDay.now(), mealType: 2));
+    meals[3] = (Meal(time: TimeOfDay.now(), mealType: 3));
     this.objectives = List();
     this.events = List();
   }
@@ -71,5 +76,24 @@ class DailyReport {
     }
 
     return prefix + new DateFormat("EEEE d MMMM", 'fr').format(this.date);
+  }
+
+  /// retourne le repas du jour demandé en fonction de son type
+  /// (0 => petit-dej, 1 => déjeuner, 2 => diner, 3 => encas)
+  Meal getMealByMealType(int mealType) {
+    return this.meals.singleWhere((meal) {
+      return meal.mealType == mealType;
+    });
+  }
+
+  /// sauvegarde le nouveau repas et remplace l'existant,
+  /// il ne peut pas il y avoir 2 repas avec le même mealType
+  /// /!\ Après avoir sauvegarder le repas il ne faut pas oublier de sauvegarder le daily_report !!!
+  void saveMeal(Meal newMeal) {
+    this.meals.map((meal) {
+      if (meal.mealType == newMeal.mealType) {
+        meal = newMeal;
+      }
+    });
   }
 }

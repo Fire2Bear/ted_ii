@@ -58,13 +58,7 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
                   },
                 ), // Jour précédent
                 GestureDetector(
-                  onTap: () async {
-                    /*
-                            DailyReportOverview dailyReport = await Navigator.of(context).pushNamed<dynamic>(
-                                Routes.addOrModifyDailyReport,
-                                arguments: DailyReport(date: DateTime.now()));
-                                */
-                  },
+                  onTap: () async {},
                   child: Container(
                       child: Row(
 

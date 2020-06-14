@@ -1,23 +1,27 @@
 import 'package:openfoodfacts/model/User.dart';
+import 'package:openfoodfacts/model/parameter/SearchTerms.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 
 /// Repository that interface openfoodfacts-dart API
 class OpenFoodFactRepository {
   static final String apiUrl = "https://api-adresse.data.gouv.fr";
 
-  Future<List<Product>> searchFood(String search) async {
+  static Future<List<Product>> searchFood(String search) async {
     var parameters = <Parameter>[
       const OutputFormat(format: Format.JSON),
-      const Page(page: 1),
-      const PageSize(size: 30),
-      const SearchSimple(active: true),
-      const SortBy(option: SortOption.PRODUCT_NAME),
+//      const Page(page: 1),
+//      const PageSize(size: 30),
+//      const SearchSimple(active: true),
+//      const SortBy(option: SortOption.PRODUCT_NAME),
+      SearchTerms(terms: [search]),
+
       /*
       const TagFilter(
           tagType: "categories",
           contains: true,
           tagName: "breakfast_cereals"),
           */
+
 //      const TagFilter(tagType: "nutrition_grades", contains: true, tagName: "A")
     ];
 
@@ -25,9 +29,7 @@ class OpenFoodFactRepository {
         ProductSearchQueryConfiguration(
             parametersList: parameters,
             fields: [
-              ProductField.NAME,
-              ProductField.SELECTED_IMAGE,
-              ProductField.INGREDIENTS_TEXT
+              ProductField.ALL,
             ],
             language: OpenFoodFactsLanguage.FRENCH);
 
