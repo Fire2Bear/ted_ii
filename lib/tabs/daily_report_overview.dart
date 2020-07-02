@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:fluttericon/rpg_awesome_icons.dart';
 import 'package:provider/provider.dart';
+import 'package:tedii/screens/add_or_modify_daily_report.dart';
 import 'package:tedii/stores/daily_report_store.dart';
-
-import '../routes.dart';
 
 // ignore: must_be_immutable
 class DailyReportOverview extends StatefulWidget {
@@ -85,7 +84,7 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
               onTap: () async {
                 // Goto AddOrModifyDailyReport
                 await Navigator.of(context).pushNamed<dynamic>(
-                    Routes.addOrModifyDailyReport,
+                    AddOrModifyDailyReport.routeName,
                     arguments: dailyReportStore.currentDailyReport);
               },
               child: Container(

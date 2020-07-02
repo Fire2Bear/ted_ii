@@ -6,6 +6,7 @@ import 'package:tedii/models/daily_report_model.dart';
 import 'package:tedii/repository/preference_repository.dart';
 import 'package:tedii/repository/repository.dart';
 import 'package:tedii/screens/add_or_modify_daily_report.dart';
+import 'package:tedii/screens/food_list_selection.dart';
 import 'package:tedii/stores/daily_report_store.dart';
 
 void main() {
@@ -46,6 +47,12 @@ class MyApp extends StatelessWidget {
           return MaterialPageRoute(
             builder: (context) {
               return AddOrModifyDailyReport(dailyReportId: dailyReport.id);
+            },
+          );
+        } else if (settings.name == FoodListSelection.routeName) {
+          return MaterialPageRoute(
+            builder: (context) {
+              return FoodListSelection();
             },
           );
         }

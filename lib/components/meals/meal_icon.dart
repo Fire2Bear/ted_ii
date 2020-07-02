@@ -7,18 +7,32 @@ class MealIcon extends StatelessWidget {
   String name;
   int mealType;
 
-  MealIcon({icon: Icon, name: String, mealType: int}) {
+  int currentMealType;
+  void Function(int mealType) callBack;
+
+  MealIcon(
+      {@required callBack,
+      icon: Icon,
+      name: String,
+      mealType: int,
+      currentMealType: int}) {
     this.icon = icon;
     this.name = name;
     this.mealType = mealType;
+    this.callBack = callBack;
+    this.currentMealType = currentMealType;
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
+        decoration: (currentMealType == mealType)
+            ? BoxDecoration(
+            color: Colors.green, borderRadius: BorderRadius.circular(20))
+            : BoxDecoration(),
         child: FlatButton(
             onPressed: () {
-              // TODO Choose meal
+              this.callBack(this.mealType);
             },
             child: Column(
               children: <Widget>[

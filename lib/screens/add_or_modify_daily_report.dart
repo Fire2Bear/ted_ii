@@ -72,20 +72,31 @@ class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
       appBar: AppBar(
         title: Logo(),
       ),
-      body: Column(
-        children: <Widget>[
-          GoBackButton(),
-          Center(
-            child: Text(this.currentDailyReport.getShortDate(),
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          MealSelector(),
-          MealDetails(
-            currentMeal: this.currentMeal, callBack: this.updateMeal,),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+        child: Column(
+          children: <Widget>[
+            GoBackButton(),
+            Center(
+              child: Text(this.currentDailyReport.getShortDate(),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            MealSelector(
+              callBackChangeMeal: this.changeCurrentMeal,
+              currentMealType: this.currentMeal.mealType,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            MealDetails(
+              currentMeal: this.currentMeal,
+              callBackSaveMeal: this.updateMeal,
+            ),
+          ],
+        ),
       ),
       drawer: MyDrawer(),
     );

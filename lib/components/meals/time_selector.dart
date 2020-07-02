@@ -40,7 +40,7 @@ class _TimeSelectorState extends State<TimeSelector> {
 
   @override
   Widget build(BuildContext context) {
-    if (this.time == null) {
+    if (this.time == null || this.time != widget.time) {
       setState(() {
         time = widget.time;
       });
@@ -72,7 +72,7 @@ class _TimeSelectorState extends State<TimeSelector> {
                   padding: EdgeInsets.all(3),
                   child: Row(
                     children: <Widget>[
-                      Text("Heure du repas :", style: TextStyle(fontSize: 16)),
+                      Text("Heure du repas : ", style: TextStyle(fontSize: 16)),
                       Text(
                         formatedTime,
                         style: TextStyle(

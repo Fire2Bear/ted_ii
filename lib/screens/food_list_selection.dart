@@ -8,20 +8,24 @@ import 'package:tedii/models/food_model.dart';
 import 'package:tedii/repository/open_food_fact_repository.dart';
 
 class FoodListSelection extends StatefulWidget {
-  final List<Food> foods;
+  static const routeName = '/foodListSelection';
 
-  FoodListSelection({@required this.foods});
+  FoodListSelection();
 
   @override
   _FoodListSelectionState createState() => _FoodListSelectionState();
 }
 
 class _FoodListSelectionState extends State<FoodListSelection> {
-  List<Product> products;
+  List<Product> _products;
+
+  bool _loading;
 
   @override
   void initState() {
     super.initState();
+    _products = [];
+    _loading = false;
   }
 
   @override
@@ -29,14 +33,22 @@ class _FoodListSelectionState extends State<FoodListSelection> {
     super.didChangeDependencies();
   }
 
+  void updateList(search) async {
+    setState(() {
+      _loading = true;
+    });
+    var result = await OpenFoodFactRepository.searchFood(search);
+    result.where((food) => food.productNameFR != null);
+    setState(() {
+      _products = result;
+      _loading = false;
+    });
+    print("result[0].productNameFR");
+    print(result);
+  }
+
   @override
   Widget build(BuildContext context) {
-    OpenFoodFactRepository.searchFood("lait").then((result) {
-      products = result;
-      print("result[0].productNameFR");
-      print(result[0].productNameFR);
-    });
-
     return Scaffold(
       appBar: AppBar(
         title: Logo(),
@@ -48,6 +60,62 @@ class _FoodListSelectionState extends State<FoodListSelection> {
           SizedBox(
             height: 10,
           ),
+          TextField(
+            autofocus: true,
+            decoration: InputDecoration(labelText: "Aliment recherché"),
+            cursorColor: Colors.blue,
+            onSubmitted: this.updateList,
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Visibility(
+                  visible: !_loading,
+                  child: Expanded(
+                    child: Container(
+                      color: Colors.lightGreen,
+                      child: ListView(
+                        padding: EdgeInsets.all(10.0),
+                        children: _products.map((product) {
+                          return Container(
+//                      height: 10,
+                              child: ListTile(
+                            title: Text(product.productName),
+                            onTap: () {
+                              Navigator.of(context)
+                                  .pop(Food.fromProduct(product));
+                            },
+                          ));
+                        }).toList(),
+                      ),
+                    ),
+                  ),
+                ),
+                Visibility(
+                  visible: _loading,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      SizedBox(
+                        child: CircularProgressIndicator(),
+                        width: 30,
+                        height: 30,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'Chargement des données...',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
       drawer: MyDrawer(),

@@ -33,10 +33,13 @@ class OpenFoodFactRepository {
             ],
             language: OpenFoodFactsLanguage.FRENCH);
 
-    SearchResult result = await OpenFoodAPIClient.searchProducts(
-        OpenFoodFactConstants.USER, configuration);
-
-    return result.products;
+    try {
+      SearchResult result = await OpenFoodAPIClient.searchProducts(
+          OpenFoodFactConstants.USER, configuration);
+      return result.products;
+    } on TypeError {
+      return [];
+    }
   }
 }
 

@@ -4,20 +4,18 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="Modification heure repas fonctionnelle + début liste aliments">
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
+    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/daily_report_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/daily_report_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/models/food_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/food_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/meal_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/meal_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repository/preference_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/preference_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +24,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="42fdbfa0" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
   <component name="FavoritesManager">
     <favorites_list name="ted_ii" />
   </component>
@@ -37,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="FlutterView" splitter-proportion="0.42706132" />
+  <component name="FlutterView" splitter-proportion="0.8041002" />
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591878751129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modification heure repas fonctionnelle + début liste aliments">
+      <created>1592152465342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592152465342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

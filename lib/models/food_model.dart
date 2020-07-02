@@ -1,13 +1,13 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+import 'package:openfoodfacts/model/Product.dart';
 import 'package:uuid/uuid.dart';
 
 class Food {
   String id;
   String productName;
 
-  Food({time: TimeOfDay, productName: String}) {
+  Food({productName: String}) {
     this.id = Uuid().v1();
     this.productName = productName;
   }
@@ -19,6 +19,10 @@ class Food {
     return this.productName;
   }
 
+  factory Food.fromProduct(Product product) {
+    return Food.foodWithId(product.barcode, product.productName);
+  }
+
   String toJson() {
     return jsonEncode({
       'id': this.id.toString(),
@@ -28,12 +32,12 @@ class Food {
 
   factory Food.fromJson(String json) {
     Map<String, dynamic> map = jsonDecode(json);
-    return Food.foodWithId(map['id'] as String, map['productName'] as String);
+    return Food.foodWithId(map['id'], map['productName']);
   }
 
   // A function that converts a json list into a List<Food>.
   static List<Food> listFromJson(String jsonList) {
-    final parsed = jsonDecode(jsonList).cast<Map<String, dynamic>>();
+    List<dynamic> parsed = jsonDecode(jsonList);
     return parsed.map<Food>((json) => Food.fromJson(json)).toList();
   }
 
