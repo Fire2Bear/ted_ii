@@ -1,6 +1,6 @@
+import 'package:TEDii/utils/utils_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tedii/utils/utils_service.dart';
 
 // ignore: must_be_immutable
 class MealIcon extends StatelessWidget {
@@ -11,12 +11,11 @@ class MealIcon extends StatelessWidget {
   int currentMealType;
   void Function(int mealType) callBack;
 
-  MealIcon(
-      {@required callBack,
-      icon: Icon,
-      name: String,
-      mealType: int,
-      currentMealType: int}) {
+  MealIcon({@required callBack,
+    icon: Icon,
+    name: String,
+    mealType: int,
+    currentMealType: int}) {
     this.icon = icon;
     this.name = name;
     this.mealType = mealType;
@@ -29,8 +28,8 @@ class MealIcon extends StatelessWidget {
     return Container(
         decoration: (currentMealType == mealType)
             ? BoxDecoration(
-                color: hexToColor("#E2ECD1"),
-                borderRadius: BorderRadius.circular(20))
+            color: hexToColor("#E2ECD1"),
+            borderRadius: BorderRadius.circular(20))
             : BoxDecoration(),
         child: FlatButton(
             onPressed: () {

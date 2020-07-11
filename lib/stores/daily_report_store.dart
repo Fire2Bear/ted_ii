@@ -1,7 +1,7 @@
+import 'package:TEDii/models/daily_report_model.dart';
+import 'package:TEDii/repository/repository.dart';
+import 'package:TEDii/utils/utils_service.dart';
 import 'package:mobx/mobx.dart';
-import 'package:tedii/models/daily_report_model.dart';
-import 'package:tedii/repository/repository.dart';
-import 'package:tedii/utils/utils_service.dart';
 
 part 'daily_report_store.g.dart';
 
@@ -23,14 +23,14 @@ abstract class _DailyReportStore with Store {
     print("# getCurrentDailyReport");
 //    print(dailyReports);
     DailyReport dailyReport = this.dailyReports.singleWhere(
-        (dailyReport) => compareOnlyDateTo(dailyReport.date, dateTime) == 0,
+            (dailyReport) => compareOnlyDateTo(dailyReport.date, dateTime) == 0,
         orElse: () {
-      // On retourne un nouveau dailyReport et on l'ajoute à la liste des existants
-      DailyReport newDailyReport = new DailyReport(date: dateTime);
-      this.dailyReports.add(newDailyReport);
-      this._repository.setDailyReports(dailyReports);
-      return newDailyReport;
-    });
+          // On retourne un nouveau dailyReport et on l'ajoute à la liste des existants
+          DailyReport newDailyReport = new DailyReport(date: dateTime);
+          this.dailyReports.add(newDailyReport);
+          this._repository.setDailyReports(dailyReports);
+          return newDailyReport;
+        });
     print(dailyReport);
     this._repository.setDailyReports(this.dailyReports);
 
@@ -67,7 +67,6 @@ abstract class _DailyReportStore with Store {
     print(this.dailyReports);
     print("length : " + this.dailyReports.length.toString());
     print("# saveDailyReport FIN");
-
   }
 
   @action

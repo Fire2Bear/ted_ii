@@ -1,5 +1,5 @@
-import 'package:tedii/models/daily_report_model.dart';
-import 'package:tedii/repository/preference_repository.dart';
+import 'package:TEDii/models/daily_report_model.dart';
+import 'package:TEDii/repository/preference_repository.dart';
 
 /// Main repository
 class Repository {

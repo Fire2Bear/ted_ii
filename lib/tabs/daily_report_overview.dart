@@ -1,10 +1,10 @@
+import 'package:TEDii/screens/add_or_modify_daily_report.dart';
+import 'package:TEDii/stores/daily_report_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:fluttericon/rpg_awesome_icons.dart';
 import 'package:provider/provider.dart';
-import 'package:tedii/screens/add_or_modify_daily_report.dart';
-import 'package:tedii/stores/daily_report_store.dart';
 
 // ignore: must_be_immutable
 class DailyReportOverview extends StatefulWidget {
@@ -44,10 +44,11 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
 
     return Observer(builder: (context) {
       return Column(
-          // Daily report
+        // Daily report
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Row(
+
               /// Naviguation DailyReport
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[

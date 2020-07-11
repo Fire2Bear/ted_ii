@@ -1,9 +1,9 @@
+import 'package:TEDii/components/meals/time_selector.dart';
+import 'package:TEDii/models/food_model.dart';
+import 'package:TEDii/models/meal_model.dart';
+import 'package:TEDii/screens/food_list_selection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tedii/components/meals/time_selector.dart';
-import 'package:tedii/models/food_model.dart';
-import 'package:tedii/models/meal_model.dart';
-import 'package:tedii/screens/food_list_selection.dart';
 
 class MealDetails extends StatefulWidget {
   final Meal currentMeal;
@@ -48,6 +48,7 @@ class _MealDetailsState extends State<MealDetails> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
+
         /// Heure du repas
         TimeSelector(widget.currentMeal.time, this.updateTime),
 
@@ -76,7 +77,7 @@ class _MealDetailsState extends State<MealDetails> {
                     onPressed: () async {
                       // Goto FoodListSelection
                       Food addedFood =
-                          await Navigator.of(context).pushNamed<dynamic>(
+                      await Navigator.of(context).pushNamed<dynamic>(
                         FoodListSelection.routeName,
                       );
                       if (addedFood != null) {
@@ -120,9 +121,9 @@ class _MealDetailsState extends State<MealDetails> {
                           children: <Widget>[
                             Expanded(
                                 child: Text(
-                              widget.currentMeal.foods[index].productName,
-                              style: TextStyle(fontSize: 18),
-                            )),
+                                  widget.currentMeal.foods[index].productName,
+                                  style: TextStyle(fontSize: 18),
+                                )),
                             Spacer(),
                             GestureDetector(
                               child: Icon(Icons.delete_forever),

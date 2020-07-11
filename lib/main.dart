@@ -1,13 +1,13 @@
+import 'package:TEDii/home.dart';
+import 'package:TEDii/models/daily_report_model.dart';
+import 'package:TEDii/repository/preference_repository.dart';
+import 'package:TEDii/repository/repository.dart';
+import 'package:TEDii/screens/add_or_modify_daily_report.dart';
+import 'package:TEDii/screens/food_list_selection.dart';
+import 'package:TEDii/stores/daily_report_store.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
-import 'package:tedii/home.dart';
-import 'package:tedii/models/daily_report_model.dart';
-import 'package:tedii/repository/preference_repository.dart';
-import 'package:tedii/repository/repository.dart';
-import 'package:tedii/screens/add_or_modify_daily_report.dart';
-import 'package:tedii/screens/food_list_selection.dart';
-import 'package:tedii/stores/daily_report_store.dart';
 
 void main() {
   PreferenceRepository preferenceRepository = PreferenceRepository();

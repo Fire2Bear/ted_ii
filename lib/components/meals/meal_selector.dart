@@ -1,7 +1,7 @@
+import 'package:TEDii/components/icons/tedii_icons_icons.dart';
+import 'package:TEDii/components/meals/meal_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tedii/components/icons/tedii_icons_icons.dart';
-import 'package:tedii/components/meals/meal_icon.dart';
 
 class MealSelector extends StatelessWidget {
   final void Function(int mealType) callBackChangeMeal;
@@ -18,12 +18,12 @@ class MealSelector extends StatelessWidget {
         children: <Widget>[
           Expanded(
               child: MealIcon(
-            callBack: this.callBackChangeMeal,
-            icon: Icons.free_breakfast,
-            name: "Petit-Dèj",
-            mealType: 0,
-            currentMealType: this.currentMealType,
-          )),
+                callBack: this.callBackChangeMeal,
+                icon: Icons.free_breakfast,
+                name: "Petit-Dèj",
+                mealType: 0,
+                currentMealType: this.currentMealType,
+              )),
           Expanded(
               child: MealIcon(
                 callBack: this.callBackChangeMeal,

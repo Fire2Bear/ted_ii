@@ -1,14 +1,15 @@
+import 'package:TEDii/stores/daily_report_store.dart';
+import 'package:TEDii/tabs/daily_report_overview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tedii/stores/daily_report_store.dart';
-import 'package:tedii/tabs/daily_report_overview.dart';
 
 // ignore: must_be_immutable
 class ActivityOverview extends StatefulWidget {
   @override
   _ActivityOverviewState createState() => _ActivityOverviewState();
 }
+
 /// Onglet activité
 class _ActivityOverviewState extends State<ActivityOverview> {
   DailyReportStore dailyReportStore;

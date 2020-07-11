@@ -1,7 +1,7 @@
+import 'package:TEDii/components/common/logo.dart';
+import 'package:TEDii/utils/utils_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tedii/components/common/logo.dart';
-import 'package:tedii/utils/utils_service.dart';
 
 class MyDrawer extends StatelessWidget {
   @override

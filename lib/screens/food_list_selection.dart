@@ -1,12 +1,12 @@
+import 'package:TEDii/components/common/go_back_button.dart';
+import 'package:TEDii/components/common/logo.dart';
+import 'package:TEDii/components/common/my_drawer.dart';
+import 'package:TEDii/models/food_model.dart';
+import 'package:TEDii/repository/open_food_fact_repository.dart';
+import 'package:TEDii/utils/utils_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:openfoodfacts/model/Product.dart';
-import 'package:tedii/components/common/go_back_button.dart';
-import 'package:tedii/components/common/logo.dart';
-import 'package:tedii/components/common/my_drawer.dart';
-import 'package:tedii/models/food_model.dart';
-import 'package:tedii/repository/open_food_fact_repository.dart';
-import 'package:tedii/utils/utils_service.dart';
 
 class FoodListSelection extends StatefulWidget {
   static const routeName = '/foodListSelection';
@@ -79,9 +79,7 @@ class _FoodListSelectionState extends State<FoodListSelection> {
 //                      color: hexToColor("#E2ECD1"),
                       child: ListView(
 //                        padding: EdgeInsets.all(10.0),
-                        children: _products.map((
-                          product,
-                        ) {
+                        children: _products.map((product,) {
                           return Container(
                             color: (_products.indexOf(product) % 2 == 0)
                                 ? hexToColor("#E2ECD1")

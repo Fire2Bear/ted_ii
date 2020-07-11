@@ -1,14 +1,14 @@
+import 'package:TEDii/components/common/go_back_button.dart';
+import 'package:TEDii/components/common/logo.dart';
+import 'package:TEDii/components/common/my_drawer.dart';
+import 'package:TEDii/components/meals/meal_details.dart';
+import 'package:TEDii/components/meals/meal_selector.dart';
+import 'package:TEDii/models/daily_report_model.dart';
+import 'package:TEDii/models/meal_model.dart';
+import 'package:TEDii/stores/daily_report_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tedii/components/common/go_back_button.dart';
-import 'package:tedii/components/common/logo.dart';
-import 'package:tedii/components/common/my_drawer.dart';
-import 'package:tedii/components/meals/meal_details.dart';
-import 'package:tedii/components/meals/meal_selector.dart';
-import 'package:tedii/models/daily_report_model.dart';
-import 'package:tedii/models/meal_model.dart';
-import 'package:tedii/stores/daily_report_store.dart';
 
 class AddOrModifyDailyReport extends StatefulWidget {
   static const routeName = '/addOrModifyDailyReport';
