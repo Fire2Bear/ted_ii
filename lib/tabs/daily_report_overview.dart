@@ -12,6 +12,7 @@ class DailyReportOverview extends StatefulWidget {
   _DailyReportOverviewState createState() => _DailyReportOverviewState();
 }
 
+/// menu de sélection dans l'onglet activité
 class _DailyReportOverviewState extends State<DailyReportOverview> {
   DailyReportStore dailyReportStore;
 
@@ -27,6 +28,7 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
 //    dailyReportStore.saveDailyReport(dailyReportStore.currentDailyReport);
   }
 
+// Permet de réinitialiser les dailyReports stockés
   @override
   Widget build(BuildContext context) {
     dailyReportStore = Provider.of<DailyReportStore>(context);

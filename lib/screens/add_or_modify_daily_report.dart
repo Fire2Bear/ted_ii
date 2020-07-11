@@ -20,7 +20,7 @@ class AddOrModifyDailyReport extends StatefulWidget {
   @override
   _AddOrModifyDailyReportState createState() => _AddOrModifyDailyReportState();
 }
-
+/// Page de visualisation et de modification d'une journée
 class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
   DailyReportStore dailyReportStore;
 
@@ -76,6 +76,8 @@ class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
         padding: const EdgeInsets.only(left: 8.0, right: 8.0),
         child: Column(
           children: <Widget>[
+
+            /// Retour
             GoBackButton(),
             Center(
               child: Text(this.currentDailyReport.getShortDate(),

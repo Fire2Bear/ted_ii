@@ -16,8 +16,10 @@ class PreferenceRepository {
     print(" ### prefs Début");
     print(prefs.getKeys());
     print(prefs.getStringList('dailyReports'));
-    print(prefs.setStringList('dailyReports',
-        null)); // Permet de réinitialiser les dailyReports stockés
+
+    // Permet de réinitialiser les dailyReports stockés
+    print(prefs.setStringList('dailyReports', null));
+
     print(" ### prefs fin");
   }
 
@@ -26,10 +28,9 @@ class PreferenceRepository {
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs
-        .getStringList('dailyReports')
-        ?.map((dailyReport) => DailyReport.fromJson(dailyReport))
-        ?.toList() ??
+            .getStringList('dailyReports')
+            ?.map((dailyReport) => DailyReport.fromJson(dailyReport))
+            ?.toList() ??
         [];
   }
-
 }

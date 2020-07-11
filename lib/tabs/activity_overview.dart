@@ -9,7 +9,7 @@ class ActivityOverview extends StatefulWidget {
   @override
   _ActivityOverviewState createState() => _ActivityOverviewState();
 }
-
+/// Onglet activité
 class _ActivityOverviewState extends State<ActivityOverview> {
   DailyReportStore dailyReportStore;
 

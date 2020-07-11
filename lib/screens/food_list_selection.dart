@@ -6,6 +6,7 @@ import 'package:tedii/components/common/logo.dart';
 import 'package:tedii/components/common/my_drawer.dart';
 import 'package:tedii/models/food_model.dart';
 import 'package:tedii/repository/open_food_fact_repository.dart';
+import 'package:tedii/utils/utils_service.dart';
 
 class FoodListSelection extends StatefulWidget {
   static const routeName = '/foodListSelection';
@@ -75,19 +76,24 @@ class _FoodListSelectionState extends State<FoodListSelection> {
                   visible: !_loading,
                   child: Expanded(
                     child: Container(
-                      color: Colors.lightGreen,
+//                      color: hexToColor("#E2ECD1"),
                       child: ListView(
-                        padding: EdgeInsets.all(10.0),
-                        children: _products.map((product) {
+//                        padding: EdgeInsets.all(10.0),
+                        children: _products.map((
+                          product,
+                        ) {
                           return Container(
-//                      height: 10,
-                              child: ListTile(
-                            title: Text(product.productName),
-                            onTap: () {
-                              Navigator.of(context)
-                                  .pop(Food.fromProduct(product));
-                            },
-                          ));
+                            color: (_products.indexOf(product) % 2 == 0)
+                                ? hexToColor("#E2ECD1")
+                                : hexToColor("#FFFFFF"),
+                            child: ListTile(
+                              title: Text(product.productName),
+                              onTap: () {
+                                Navigator.of(context)
+                                    .pop(Food.fromProduct(product));
+                              },
+                            ),
+                          );
                         }).toList(),
                       ),
                     ),

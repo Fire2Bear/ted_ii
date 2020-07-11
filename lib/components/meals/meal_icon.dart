@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:tedii/utils/utils_service.dart';
 
 // ignore: must_be_immutable
 class MealIcon extends StatelessWidget {
@@ -28,7 +29,8 @@ class MealIcon extends StatelessWidget {
     return Container(
         decoration: (currentMealType == mealType)
             ? BoxDecoration(
-            color: Colors.green, borderRadius: BorderRadius.circular(20))
+                color: hexToColor("#E2ECD1"),
+                borderRadius: BorderRadius.circular(20))
             : BoxDecoration(),
         child: FlatButton(
             onPressed: () {

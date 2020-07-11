@@ -4,27 +4,56 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="">
+    <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="modification de la liste food et du logo de lancement de l'app">
+      <change afterPath="$PROJECT_DIR$/assets/icon/LOGO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TediiIcons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TediiIcons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/food_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/food_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/open_food_fact_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repository/preference_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/preference_repository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tabs/activity_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/activity_overview.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6_API_29" />
   <component name="FavoritesManager">
     <favorites_list name="ted_ii" />
   </component>
@@ -53,6 +82,11 @@
   </component>
   <component name="ProjectId" id="1boU6Lkn6JcT9oPOpLNBRMmM5Xb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
@@ -67,13 +101,6 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\fonts" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\fonts" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\screens" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\stores" />
@@ -81,18 +108,13 @@
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\tabs" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\common" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\assets" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\fonts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -139,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592152465342</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout de la sélection des aliments">
+      <created>1593697997623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593697997623</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,9 +189,53 @@
     <MESSAGE value="Working loading and saving daily_reports" />
     <MESSAGE value="Navigation between dates working" />
     <MESSAGE value="Modification heure repas fonctionnelle + début liste aliments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification heure repas fonctionnelle + début liste aliments" />
+    <MESSAGE value="Ajout de la sélection des aliments" />
+    <MESSAGE value="modification de la liste food et du logo de lancement de l'app" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification de la liste food et du logo de lancement de l'app" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="12" key="CommitChangelistDialog2" timestamp="1594471461921">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="304" y="12" key="CommitChangelistDialog2/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471461921" />
+    <state x="852" y="182" key="FileChooserDialogImpl" timestamp="1594461003016">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="852" y="182" key="FileChooserDialogImpl/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594461003016" />
+    <state width="1492" height="336" key="GridCell.Tab.0.bottom" timestamp="1594471399164">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="336" key="GridCell.Tab.0.bottom/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471399164" />
+    <state width="1492" height="336" key="GridCell.Tab.0.center" timestamp="1594471399164">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="336" key="GridCell.Tab.0.center/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471399164" />
+    <state width="1492" height="336" key="GridCell.Tab.0.left" timestamp="1594471399163">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="336" key="GridCell.Tab.0.left/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471399163" />
+    <state width="1492" height="336" key="GridCell.Tab.0.right" timestamp="1594471399164">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="336" key="GridCell.Tab.0.right/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471399164" />
+    <state x="277" y="60" key="SettingsEditor" timestamp="1594460368218">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="60" key="SettingsEditor/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594460368218" />
+    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594460764410">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594460764410" />
+    <state x="462" y="149" width="611" height="536" key="find.popup" timestamp="1594470832946">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="462" y="149" width="611" height="536" key="find.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594470832946" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1594461451767">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594461451767" />
   </component>
 </project>
