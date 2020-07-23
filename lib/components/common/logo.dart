@@ -7,7 +7,15 @@ class Logo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Icon(
+        Image.asset(
+          "assets/icon/LOGO.png",
+          width: 100,
+          fit: BoxFit.cover,
+        ),
+        SizedBox(
+          width: 30,
+        ),
+        /*Icon(
           Icons.calendar_today,
           color: Colors.white,
         ),
@@ -18,7 +26,7 @@ class Logo extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
           textAlign: TextAlign.left,
-        ),
+        ),*/
       ],
     );
   }

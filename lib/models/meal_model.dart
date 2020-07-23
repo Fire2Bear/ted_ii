@@ -10,15 +10,24 @@ class Meal {
   int mealType;
   TimeOfDay time;
   List<Food> foods;
+  String place;
+  String duringTime;
+  String physicalState;
+  int mood;
 
   Meal({time: TimeOfDay, mealType: int}) {
     this.id = Uuid().v1();
     this.time = time;
     this.mealType = mealType;
     this.foods = [];
+    place = null;
+    duringTime = null;
+    physicalState = null;
+    mood = null;
   }
 
-  Meal.mealWithId(this.id, this.time, this.mealType, this.foods);
+  Meal.mealWithId(this.id, this.time, this.mealType, this.foods, this.place,
+      this.duringTime, this.physicalState, this.mood);
 
   @override
   String toString() {
@@ -31,6 +40,10 @@ class Meal {
       'time': this.time.hour.toString() + ":" + this.time.minute.toString(),
       'mealType': this.mealType.toString(),
       'foods': Food.listToJson(this.foods),
+      'place': this.place.toString(),
+      'duringTime': this.duringTime.toString(),
+      'physicalState': this.physicalState.toString(),
+      'mood': this.mood?.toString() ?? "-1",
     });
   }
 
@@ -43,6 +56,10 @@ class Meal {
           minute: int.parse(json['time'].split(":")[1])),
       int.parse(json['mealType']),
       Food.listFromJson(json['foods'] as String),
+      json['place'] as String,
+      json['duringTime'] as String,
+      json['physicalState'] as String,
+      int.parse(json['mood']) ?? -1,
     );
   }
 

@@ -20,10 +20,6 @@
 ///         Author:    Daniela Howe & Ivan Montiel
 ///         License:   SIL (http://scripts.sil.org/OFL)
 ///         Homepage:  http://nagoshiashumari.github.io/Rpg-Awesome/
-/// * Material Design Icons, Copyright (C) Google, Inc
-///         Author:    Google
-///         License:   Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
-///         Homepage:  https://design.google.com/icons/
 /// * Font Awesome 4, Copyright (C) 2016 by Dave Gandy
 ///         Author:    Dave Gandy
 ///         License:   SIL ()
@@ -41,16 +37,6 @@ class TediiIcons {
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData archery_target =
       IconData(0xe90e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sentiment_dissatisfied =
-      IconData(0xead8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sentiment_neutral =
-      IconData(0xead9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sentiment_satisfied =
-      IconData(0xeada, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sentiment_very_dissatisfied =
-      IconData(0xeadb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sentiment_very_satisfied =
-      IconData(0xeadc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData food =
       IconData(0xf0f5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }

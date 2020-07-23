@@ -8,6 +8,7 @@ import 'package:TEDii/models/meal_model.dart';
 import 'package:TEDii/stores/daily_report_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 
 class AddOrModifyDailyReport extends StatefulWidget {
@@ -20,6 +21,7 @@ class AddOrModifyDailyReport extends StatefulWidget {
   @override
   _AddOrModifyDailyReportState createState() => _AddOrModifyDailyReportState();
 }
+
 /// Page de visualisation et de modification d'une journée
 class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
   DailyReportStore dailyReportStore;
@@ -69,38 +71,76 @@ class _AddOrModifyDailyReportState extends State<AddOrModifyDailyReport> {
     print(currentMeal);
 
     return Scaffold(
+      drawer: MyDrawer(),
       appBar: AppBar(
         title: Logo(),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-        child: Column(
-          children: <Widget>[
-
-            /// Retour
-            GoBackButton(),
-            Center(
-              child: Text(this.currentDailyReport.getShortDate(),
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+      body: CustomScrollView(slivers: <Widget>[
+        SliverAppBar(
+          /*flexibleSpace: FlexibleSpaceBar(
+//            centerTitle: true,
+            titlePadding: EdgeInsets.all(0),
+            title:
+          ),*/
+//          backgroundColor: hexToColor("#FFFFFF"),
+          automaticallyImplyLeading: false,
+          pinned: true,
+          floating: true,
+          expandedHeight: 130,
+          elevation: 15,
+//          titleSpacing: 10,
+          leading: GoBackButton(),
+          /*flexibleSpace: Container(
+            width: double.infinity,
+            height: 200,
+            child: Placeholder(),
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.green, Colors.white],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                )
             ),
-            SizedBox(
-              height: 20,
+          ),*/
+          title: Container(
+//            padding: EdgeInsets.only(bottom: 15.0, top: 5),
+            child: Row(
+              children: <Widget>[
+                Center(
+                  child: Text(this.currentDailyReport.getShortDate(),
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                ),
+              ],
             ),
-            MealSelector(
-              callBackChangeMeal: this.changeCurrentMeal,
-              currentMealType: this.currentMeal.mealType,
+          ),
+          bottom: PreferredSize(
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: MealSelector(
+                callBackChangeMeal: this.changeCurrentMeal,
+                currentMealType: this.currentMeal.mealType,
+              ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            MealDetails(
-              currentMeal: this.currentMeal,
-              callBackSaveMeal: this.updateMeal,
-            ),
-          ],
+            preferredSize: Size(0.0, 70.0),
+          ),
         ),
-      ),
-      drawer: MyDrawer(),
+        SliverToBoxAdapter(
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 10,
+                ),
+                MealDetails(
+                  currentMeal: this.currentMeal,
+                  callBackSaveMeal: this.updateMeal,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ]),
     );
   }
 }

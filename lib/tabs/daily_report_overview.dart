@@ -99,7 +99,7 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
                     SizedBox(width: 10),
                     Icon(Icons.restaurant),
                     SizedBox(width: 10),
-                    Text("Mes repas")
+                    Text("Mon rapport journalier")
                   ],
                 ),
               ),
@@ -120,26 +120,6 @@ class _DailyReportOverviewState extends State<DailyReportOverview> {
                     Icon(RpgAwesome.archery_target),
                     SizedBox(width: 10),
                     Text("Mes objectifs")
-                  ],
-                ),
-              ),
-            ),
-            GestureDetector(
-
-              /// My events
-              onTap: () {
-                // Todo goto MyEvents
-              },
-              child: Container(
-                color: Colors.white,
-                // Permet que toute la largeur soit cliquable
-                height: 50,
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(width: 10),
-                    Icon(Icons.event),
-                    SizedBox(width: 10),
-                    Text("Mes événements")
                   ],
                 ),
               ),

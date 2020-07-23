@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text('RECETTES'),
+              title: Text('JOURNAL DE BORD'),
               backgroundColor: Colors.green)
         ],
         onTap: (index) {

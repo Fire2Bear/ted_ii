@@ -5,31 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/fonts/TediiIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/tedii_icons_icons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/common/labeled_radio.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_during_time_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_mood_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_physical_state_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_place_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/meals/mood_icon.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/enums/during_time_of_meal.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/enums/physical_state_of_meal.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/enums/place_of_meal_enum.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/TediiIcons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TediiIcons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/common/logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/logo.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/components/common/my_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/my_drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/icons/tedii_icons_icons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/icons/tedii_icons_icons.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_icon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_selector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/daily_report_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/daily_report_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repository/preference_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/preference_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repository/repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/img/flutter-icons-6017199f/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/img/flutter-icons-649fc0cb.zip" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-649fc0cb.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/meal_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/meal_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/stores/daily_report_store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tabs/activity_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/activity_overview.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="42fdbfa0" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6_API_29" />
   <component name="FavoritesManager">
     <favorites_list name="ted_ii" />
   </component>
@@ -40,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="FlutterView" splitter-proportion="0.8041002" />
+  <component name="FlutterView" splitter-proportion="0.67811936" />
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -69,7 +83,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/screens" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,26 +91,36 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\screens" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\stores" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\tabs" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\assets" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\fonts" />
       <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii" />
-      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\assets\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\enums" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\assets" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\meals" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\enums" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\components\icons" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\assets\fonts" />
+      <recent name="C:\Users\nicol\Documents\Cours\ColoTeam\dev\ted_ii\lib\screens" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="Swip day" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Swip day" />
+      <option name="testFile" value="$PROJECT_DIR$/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.Swip day" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -151,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594471806324</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changement de nom de tedi a TEDii">
+      <created>1594473163217</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594473163217</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,51 +205,70 @@
     <MESSAGE value="Modification heure repas fonctionnelle + début liste aliments" />
     <MESSAGE value="Ajout de la sélection des aliments" />
     <MESSAGE value="modification de la liste food et du logo de lancement de l'app" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification de la liste food et du logo de lancement de l'app" />
+    <MESSAGE value="changement de nom de tedi a TEDii" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement de nom de tedi a TEDii" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="12" key="CommitChangelistDialog2" timestamp="1594471805588">
+    <state x="499" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594569284451">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="304" y="12" key="CommitChangelistDialog2/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594471805588" />
-    <state x="852" y="182" key="FileChooserDialogImpl" timestamp="1594461003016">
+    <state x="499" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594569284451" />
+    <state x="304" y="12" key="CommitChangelistDialog2" timestamp="1594473162593">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="852" y="182" key="FileChooserDialogImpl/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594461003016" />
-    <state width="1492" height="336" key="GridCell.Tab.0.bottom" timestamp="1594473131495">
+    <state x="304" y="12" key="CommitChangelistDialog2/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473162593" />
+    <state x="852" y="182" key="FileChooserDialogImpl" timestamp="1595236051533">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1492" height="336" key="GridCell.Tab.0.bottom/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473131495" />
-    <state width="1492" height="336" key="GridCell.Tab.0.center" timestamp="1594473131495">
+    <state x="852" y="182" key="FileChooserDialogImpl/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595236051533" />
+    <state width="715" height="252" key="GridCell.Tab.0.bottom" timestamp="1595509652735">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1492" height="336" key="GridCell.Tab.0.center/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473131495" />
-    <state width="1492" height="336" key="GridCell.Tab.0.left" timestamp="1594473131495">
+    <state width="738" height="167" key="GridCell.Tab.0.bottom/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
+    <state width="715" height="252" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595509652735" />
+    <state width="1210" height="263" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857423" />
+    <state width="715" height="252" key="GridCell.Tab.0.center" timestamp="1595509652734">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1492" height="336" key="GridCell.Tab.0.left/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473131495" />
-    <state width="1492" height="336" key="GridCell.Tab.0.right" timestamp="1594473131495">
+    <state width="738" height="167" key="GridCell.Tab.0.center/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
+    <state width="715" height="252" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595509652734" />
+    <state width="1210" height="263" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
+    <state width="715" height="252" key="GridCell.Tab.0.left" timestamp="1595509652734">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1492" height="336" key="GridCell.Tab.0.right/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473131495" />
+    <state width="738" height="167" key="GridCell.Tab.0.left/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654682" />
+    <state width="715" height="252" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595509652734" />
+    <state width="1210" height="263" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
+    <state width="715" height="252" key="GridCell.Tab.0.right" timestamp="1595509652735">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="738" height="167" key="GridCell.Tab.0.right/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
+    <state width="715" height="252" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595509652735" />
+    <state width="1210" height="263" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
     <state x="277" y="60" key="SettingsEditor" timestamp="1594460368218">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594460368218" />
-    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594460764410">
+    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595505569227">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594460764410" />
-    <state x="462" y="149" width="740" height="606" key="find.popup" timestamp="1594472202161">
+    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595492216969" />
+    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834@0.0.1536.834" timestamp="1595505569227" />
+    <state x="155" y="155" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857593" />
+    <state x="462" y="149" width="740" height="606" key="find.popup" timestamp="1595236165924">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="462" y="149" width="740" height="606" key="find.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594472202161" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1594461451767">
+    <state x="462" y="149" width="740" height="606" key="find.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595236165924" />
+    <state x="424" y="194" key="run.anything.popup" timestamp="1594833081983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594461451767" />
+    <state x="424" y="194" key="run.anything.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594833081983" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1595236056186">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595236056186" />
   </component>
 </project>

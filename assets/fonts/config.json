@@ -17,6 +17,42 @@
       "css": "archery_target",
       "code": 59662,
       "src": "rpgawesome"
+    },
+    {
+      "uid": "qqsxko9kqxh5g53lz33yonkpc2rpkvkn",
+      "css": "left",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "dedb5f383f780c032543327476815524",
+      "css": "sentiment_dissatisfied",
+      "code": 60120,
+      "src": "material"
+    },
+    {
+      "uid": "3d1f90fffb3eb4f17375515b06ad6390",
+      "css": "sentiment_neutral",
+      "code": 60121,
+      "src": "material"
+    },
+    {
+      "uid": "24f339a1393bceca402fb4c4d92b54a6",
+      "css": "sentiment_satisfied",
+      "code": 60122,
+      "src": "material"
+    },
+    {
+      "uid": "4f59634dbde92e5cab1dc69612119024",
+      "css": "sentiment_very_dissatisfied",
+      "code": 60123,
+      "src": "material"
+    },
+    {
+      "uid": "a4d30e79986ba0acf74ce9e6edc43c55",
+      "css": "sentiment_very_satisfied",
+      "code": 60124,
+      "src": "material"
     }
   ]
 }

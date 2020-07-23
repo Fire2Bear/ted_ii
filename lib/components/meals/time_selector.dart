@@ -62,7 +62,9 @@ class _TimeSelectorState extends State<TimeSelector> {
             selectTime(context);
           },
           child: Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.only(
+              left: 10,
+            ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[

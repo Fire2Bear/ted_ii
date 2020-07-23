@@ -38,14 +38,30 @@ class _FoodListSelectionState extends State<FoodListSelection> {
     setState(() {
       _loading = true;
     });
-    var result = await OpenFoodFactRepository.searchFood(search);
-    result.where((food) => food.productNameFR != null);
-    setState(() {
-      _products = result;
-      _loading = false;
-    });
-    print("result[0].productNameFR");
-    print(result);
+
+    var result;
+    if (search != "") {
+      result = await OpenFoodFactRepository.searchFood(search);
+      result.where((food) => food.productNameFR != null);
+
+      if (result.isEmpty) {
+        result = await OpenFoodFactRepository.searchFood(search);
+        result.where((food) => food.productNameFR != null);
+      }
+/*
+      print("result[0].productNameFR");
+      print(result);*/
+
+    } else {
+      result = new List<Product>();
+    }
+    // Pour empêcher un mise à jour du state alors que l'utilisateur est revenu en arrière
+    if (this.mounted) {
+      setState(() {
+        _products = result;
+        _loading = false;
+      });
+    }
   }
 
   @override
@@ -57,15 +73,14 @@ class _FoodListSelectionState extends State<FoodListSelection> {
       body: Column(
         children: <Widget>[
           GoBackButton(),
-          Center(),
-          SizedBox(
-            height: 10,
-          ),
-          TextField(
-            autofocus: true,
-            decoration: InputDecoration(labelText: "Aliment recherché"),
-            cursorColor: Colors.blue,
-            onSubmitted: this.updateList,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              autofocus: true,
+              decoration: InputDecoration(labelText: "Aliment recherché"),
+              cursorColor: Colors.blue,
+              onSubmitted: this.updateList,
+            ),
           ),
           Expanded(
             child: Column(
@@ -78,8 +93,10 @@ class _FoodListSelectionState extends State<FoodListSelection> {
                     child: Container(
 //                      color: hexToColor("#E2ECD1"),
                       child: ListView(
-//                        padding: EdgeInsets.all(10.0),
-                        children: _products.map((product,) {
+                        padding: EdgeInsets.all(8.0),
+                        children: _products.map((
+                          product,
+                        ) {
                           return Container(
                             color: (_products.indexOf(product) % 2 == 0)
                                 ? hexToColor("#E2ECD1")

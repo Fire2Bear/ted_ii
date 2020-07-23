@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "TediiIcons",
   "css_prefix_text": "",
   "css_use_suffix": false,
   "hinting": true,
@@ -17,6 +17,12 @@
       "css": "archery_target",
       "code": 59662,
       "src": "rpgawesome"
+    },
+    {
+      "uid": "qqsxko9kqxh5g53lz33yonkpc2rpkvkn",
+      "css": "left",
+      "code": 59392,
+      "src": "typicons"
     }
   ]
 }
