@@ -5,45 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe108ad6-77ad-4449-ab04-2cec94dd1530" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/fonts/TediiIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/tedii_icons_icons.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/common/labeled_radio.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_during_time_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_mood_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_physical_state_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/meal_place_selector.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/meals/mood_icon.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/enums/during_time_of_meal.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/enums/physical_state_of_meal.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/enums/place_of_meal_enum.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/TediiIcons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TediiIcons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/go_back_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/common/logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/logo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/common/my_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/common/my_drawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/icons/tedii_icons_icons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/icons/tedii_icons_icons.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/meal_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/meals/time_selector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/img/flutter-icons-6017199f/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-f35704ee/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/img/flutter-icons-649fc0cb.zip" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon_archives/flutter-icons-649fc0cb.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/meal_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/meal_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_or_modify_daily_report.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/food_list_selection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tabs/daily_report_overview.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
   <component name="FavoritesManager">
     <favorites_list name="ted_ii" />
   </component>
@@ -182,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594473163217</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finalisation presentation 24/07/2020">
+      <created>1595509715740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595509715740</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +184,8 @@
     <MESSAGE value="Ajout de la sélection des aliments" />
     <MESSAGE value="modification de la liste food et du logo de lancement de l'app" />
     <MESSAGE value="changement de nom de tedi a TEDii" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement de nom de tedi a TEDii" />
+    <MESSAGE value="finalisation presentation 24/07/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalisation presentation 24/07/2020" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -216,47 +195,50 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594569284451" />
-    <state x="304" y="12" key="CommitChangelistDialog2" timestamp="1594473162593">
+    <state x="304" y="12" key="CommitChangelistDialog2" timestamp="1595509714525">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="304" y="12" key="CommitChangelistDialog2/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594473162593" />
-    <state x="852" y="182" key="FileChooserDialogImpl" timestamp="1595236051533">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="304" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1595509714525" />
+    <state x="1065" y="229" key="FileChooserDialogImpl" timestamp="1598253178788">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="852" y="182" key="FileChooserDialogImpl/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595236051533" />
-    <state width="715" height="252" key="GridCell.Tab.0.bottom" timestamp="1595509652735">
+    <state x="1065" y="229" key="FileChooserDialogImpl/0.1080.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1598253178788" />
+    <state width="1491" height="252" key="GridCell.Tab.0.bottom" timestamp="1595578833125">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="738" height="167" key="GridCell.Tab.0.bottom/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
-    <state width="715" height="252" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595509652735" />
+    <state width="1491" height="252" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595578833125" />
     <state width="1210" height="263" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857423" />
-    <state width="715" height="252" key="GridCell.Tab.0.center" timestamp="1595509652734">
+    <state width="1491" height="252" key="GridCell.Tab.0.center" timestamp="1595578833125">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="738" height="167" key="GridCell.Tab.0.center/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
-    <state width="715" height="252" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595509652734" />
+    <state width="1491" height="252" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595578833125" />
     <state width="1210" height="263" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
-    <state width="715" height="252" key="GridCell.Tab.0.left" timestamp="1595509652734">
+    <state width="1491" height="252" key="GridCell.Tab.0.left" timestamp="1595578833124">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="738" height="167" key="GridCell.Tab.0.left/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654682" />
-    <state width="715" height="252" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595509652734" />
+    <state width="1491" height="252" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595578833124" />
     <state width="1210" height="263" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
-    <state width="715" height="252" key="GridCell.Tab.0.right" timestamp="1595509652735">
+    <state width="1491" height="252" key="GridCell.Tab.0.right" timestamp="1595578833125">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="738" height="167" key="GridCell.Tab.0.right/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595490654683" />
-    <state width="715" height="252" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595509652735" />
+    <state width="1491" height="252" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595578833125" />
     <state width="1210" height="263" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857422" />
-    <state x="277" y="60" key="SettingsEditor" timestamp="1594460368218">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1602582925384">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1594460368218" />
-    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595505569227">
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602582925384" />
+    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1602581879460">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834/-8.-1080.1920.1050@0.0.1536.834" timestamp="1595492216969" />
-    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834@0.0.1536.834" timestamp="1595505569227" />
+    <state x="186" y="101" width="1213" height="617" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834@0.0.1536.834" timestamp="1602581879460" />
     <state x="155" y="155" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1594745857593" />
     <state x="462" y="149" width="740" height="606" key="find.popup" timestamp="1595236165924">
       <screen x="0" y="0" width="1536" height="834" />
